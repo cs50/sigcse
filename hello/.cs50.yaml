@@ -1,0 +1,22 @@
+check50: 
+
+  files:
+    - !exclude '*'
+    - !include '*.c'
+    - !require 'hello.c'
+
+  checks:
+    responds to Brian:
+      - run: make hello
+        exit: 0
+      - run: ./hello
+        stdin: "Brian"
+        stdout: "hello, Brian\n"
+        exit: 0
+    responds to Veronica:
+      - run: make hello
+        exit: 0
+      - run: ./hello
+        stdin: "Veronica"
+        stdout: "hello, Veronica\n"
+        exit: 0
