@@ -7,14 +7,14 @@ check50:
 
   checks:
     responds to Brian:
-      - run: make hello
+      - run: clang hello.c -o hello -lcs50
         exit: 0
       - run: ./hello
         stdin: "Brian"
         stdout: "hello, Brian\n"
         exit: 0
     responds to Veronica:
-      - run: make hello
+      - run: clang hello.c -o hello -lcs50
         exit: 0
       - run: ./hello
         stdin: "Veronica"
