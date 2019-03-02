@@ -13,10 +13,10 @@ check50:
         stdin: "Brian"
         stdout: "hello, Brian\n"
         exit: 0
-    responds to Veronica:
+    responds to Alex:
       - run: clang hello.c -o hello -lcs50
         exit: 0
       - run: ./hello
-        stdin: "Veronica"
-        stdout: "hello, Veronica\n"
+        stdin: "Alex"
+        stdout: "hello, Alex\n"
         exit: 0
