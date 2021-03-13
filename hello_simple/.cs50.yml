@@ -1,0 +1,6 @@
+check50:
+  checks:
+      prints hello: 
+        - run: clang hello.c -o hello && ./hello
+          stdout: hello world
+          exit: 0
